@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="button.css" />
+    <title data-i18n="__MSG_ext_extension_name__ - __MSG_html_options_title__">
+      PomoFriend - Settings
+    </title>
+  </head>
+  <body>
+    <div>
+      <a href="https://hackathon-squagward.vercel.app/" target="_blank">
+        <input class="button" type="BUTTON" value="PomoFriend Website" />
+      </a>
+      <div>
+        Blacklist Toggle
+        <div class="switchWrapper">
+          <label class="switch">
+            <input type="checkbox" checked id="check" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <h3>Blacklist websites from the following URLs:</h3>
+
+    <textarea
+      id="whitelist"
+      placeholder="Type something..."
+      class="option"
+      rows="10"
+      cols="38"
+    ></textarea>
+    <form>
+      <input class="button" id="Save" type="submit" value="Save" />
+    </form>
+    <script src="badge.js"></script>
+    <script src="blocker.js"></script>
+  </body>
+</html>
